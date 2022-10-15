@@ -107,3 +107,18 @@ p {
 .email-link:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 576px) {
+  h1,
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .primary-link {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+}
