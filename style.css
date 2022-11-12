@@ -90,6 +90,7 @@ p {
 .about-paragraphs {
   display: block;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 .about-paragraphs p {
