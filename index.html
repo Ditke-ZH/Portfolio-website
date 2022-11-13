@@ -3,145 +3,209 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Front-end developer based in Zürich, Switzerland - Portfolio website of Edit Guntermann."
-      content="width=device-width, initial-scale=1.0"
+      content="Patricia is a front-end engineer based in Portugal."
     />
-    <title>Front-end developer - Edit Guntermann</title>
+    <title>Front-end developer - Patricia Pereira</title>
+
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/portfolio.css" />
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ddc3ee268a.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" title="Homepage">EG</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="index.html"
-                title="Homepage"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html" title="About Edit"
-                >About me</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html#contact" title="Contact Edit"
-                >Contact me</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <h2>👋 Hi, I am</h2>
-    <h1>Edit Guntermann</h1>
-    <h3>Front-end developer, based in Zürich</h3>
-    <div class="navigation-links">
-      <a href="about.html#contact" class="contact-link" title="Contact Edit"
-        >Contact me</a
-      >
-      <a href="about.html" class="about-link" title="About Edit">About me</a>
-    </div>
     <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage">
+          <img
+            src="images/logo.png"
+            class="logo d-none d-md-block"
+            alt="Patricia Logo"
+          />
+          <img
+            src="images/logo-small.jpg"
+            class="logo d-block d-md-none"
+            alt="Patricia Logo"
+          />
+        </a>
+        <ul>
+          <li class="active">
+            <a href="/" title="Homepage"> Home</a>
+          </li>
+          <li>
+            <a href="/about.html" title="About Patricia"> About</a>
+          </li>
+          <li>
+            <a href="/work.html" title="Patricia's work"> Work</a>
+          </li>
+          <li>
+            <a href="/contact.html" title="Contact Patricia"> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <p>👋 Hello, I'm</p>
+      <h1>Patricia Pereira</h1>
+      <h2 class="mb-5">Front-end developer based in Portugal</h2>
+      <div>
+        <a href="/contact.html" class="btn btn-branding" title="Contact me"
+          >Contact me</a
+        >
+      </div>
+    </div>
+    <p class="text-center m-5">Check out some of my featured projects below</p>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col d-none d-lg-block">
+          <img
+            src="images/yogurt.png"
+            class="img-fluid"
+            alt="Yogurt project preview"
+          />
+        </div>
+        <div class="col">
+          <div class="project-desciption">
+            <h2 class="mb-5">Yogurt Landing Page</h2>
+            <p class="mb-5 text-muted">
+              I entered the world of front-end development by gaining some
+              knowledge in HTML, CSS, and JavaScript. I used my knowledge of
+              these languages, along with my new skills in VS Code, to build a
+              landing page about Yogurt. The page utilizes JavaScript functions
+              to create user interaction.
+            </p>
+            <a href="/work.html" class="btn btn-branding-outline">
+              Learn more
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col">
+          <div class="project-desciption">
+            <h2 class="mb-5">Weather App</h2>
+            <p class="mb-5 text-muted">
+              I built a Vanilla JavaScript weather app in SheCodes Plus, an
+              advanced 8-week JavaScript coding workshop. Building upon my
+              previously-gained knowledge, I also became skilled in Bootstrap,
+              API’s, real-life development workflow, hosting, and advanced
+              JavaScript. I combined all of these skills to create a
+              fully-functioning weather app.
+            </p>
+            <a href="/work.html" class="btn btn-branding-outline">
+              Learn more
+            </a>
+          </div>
+        </div>
+        <div class="col d-none d-lg-block">
+          <img
+            src="images/weather.png"
+            class="img-fluid"
+            alt="Weather project preview"
+          />
+        </div>
+      </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col d-none d-lg-block">
           <img
-            src="images/seychelles.jpg"
-            class="img-fluid rounded"
-            alt="The Seychelles project"
+            src="images/dictionary.png"
+            class="img-fluid"
+            alt="Dictionary app preview"
           />
         </div>
-        <div class="col-md-6">
-          <h2 class="mb-3">The Seychelles Project</h2>
-          <p>
-            The Seychelles Project was my very first project where I sat foot in
-            the world of web development. Please take mercy on me 🤓
-          </p>
-          <div class="mt-5">
-            <a
-              href="https://www.shecodes.io/workshops/shecodes-basics-8f6ccebe-8505-4a7a-ad4e-e67033a5733d/projects/970924"
-              class="primary-link"
-              target="_blank"
-              >Launch The Seychelles Project</a
-            >
+        <div class="col">
+          <div class="project-desciption">
+            <h2 class="mb-5">Dictionary App</h2>
+            <p class="mb-5 text-muted">
+              I immersed myself in React development in SheCodes React. I used
+              my knowledge of this highly-demanded framework to build a working
+              dictionary app incorporating coding best practices, along with the
+              most popular tools and technologies.
+            </p>
+            <a href="/work.html" class="btn btn-branding-outline">
+              Learn more
+            </a>
           </div>
         </div>
       </div>
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <h2 class="mb-3">Weather app</h2>
-          <p>
-            The Weather App is my second project with SheCodes at the Plus
-            Workshop where I learned to use more advanced HTML, CSS and
-            JavaScript. Although it is not perfect, I am very proud of it 😎
-          </p>
-          <div class="mb-5 mt-5">
+      <footer>
+        <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+          <div>
+            <h3>Work Inquiry</h3>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
             <a
-              href="https://www.shecodes.io/workshops/shecodes-plus-3dd88700-ec79-4dc1-b666-f3ae77d16a16/projects/1126237"
-              class="primary-link"
-              target="_blank"
-              >Launch Weather App</a
+              href="/contact.html"
+              class="btn btn-branding mt-3"
+              title="Contact Patricia"
             >
+              Contact me
+            </a>
           </div>
         </div>
-        <div class="col-md-6">
-          <img
-            src="images/weather.jpg"
-            class="img-fluid rounded"
-            alt="Weather-app"
-          />
+        <div class="d-flex justify-content-center mb-5">
+          <a
+            href="mailto:patricia@gmail.com"
+            class="email-link"
+            title="Email Patricia"
+          >
+            patricia@gmail.com
+          </a>
         </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <img
-            src="images/coding.jpg"
-            class="img-fluid rounded"
-            alt="yogurt project"
-          />
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://www.github.com/patricia"
+            target="_blank"
+            title="GitHub Profile"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instragram.com/patricia"
+            target="_blank"
+            title="instragram Profile"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.twitter.com/patricia"
+            target="_blank"
+            title="Twitter Profile"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
         </div>
-        <div class="col-md-6">
-          <h2 class="mb-3">Future Projects</h2>
-          <p>Future projects to come, stay tuned 👩‍💻</p>
-          <div class="mt-5">
-            <a
-              href="https://www.shecodes.io/graduates/48130-edit-guntermann"
-              class="primary-link"
-              target="_blank"
-              >Launch App</a
-            >
-          </div>
-        </div>
-      </div>
+        <p class="text-center mt-5">
+          ✌️ This website was coded by Patricia Pereira, and is
+          <a
+            href="https://github.com/matthieua/portfolio-project"
+            target="_blank"
+          >
+            open-sourced
+          </a>
+        </p>
+      </footer>
     </div>
   </body>
 </html>
